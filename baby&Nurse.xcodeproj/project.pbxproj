@@ -13,6 +13,8 @@
 		678CE32F2074C0180057855A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 678CE32E2074C0180057855A /* Assets.xcassets */; };
 		678CE3322074C0180057855A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 678CE3302074C0180057855A /* LaunchScreen.storyboard */; };
 		678CE3352074C0180057855A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 678CE3342074C0180057855A /* main.m */; };
+		678CE33D2074C1990057855A /* Nurse.m in Sources */ = {isa = PBXBuildFile; fileRef = 678CE33C2074C1990057855A /* Nurse.m */; };
+		678CE3402074C1A90057855A /* Baby.m in Sources */ = {isa = PBXBuildFile; fileRef = 678CE33F2074C1A90057855A /* Baby.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		678CE3312074C0180057855A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		678CE3332074C0180057855A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		678CE3342074C0180057855A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		678CE33B2074C1990057855A /* Nurse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Nurse.h; sourceTree = "<group>"; };
+		678CE33C2074C1990057855A /* Nurse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Nurse.m; sourceTree = "<group>"; };
+		678CE33E2074C1A90057855A /* Baby.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Baby.h; sourceTree = "<group>"; };
+		678CE33F2074C1A90057855A /* Baby.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Baby.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +64,10 @@
 		678CE3242074C00E0057855A /* baby&Nurse */ = {
 			isa = PBXGroup;
 			children = (
+				678CE3422074C1E80057855A /* Controller */,
+				678CE3412074C1B30057855A /* Model */,
 				678CE3252074C00E0057855A /* AppDelegate.h */,
 				678CE3262074C00E0057855A /* AppDelegate.m */,
-				678CE3282074C00E0057855A /* ViewController.h */,
-				678CE3292074C00E0057855A /* ViewController.m */,
 				678CE32B2074C00E0057855A /* Main.storyboard */,
 				678CE32E2074C0180057855A /* Assets.xcassets */,
 				678CE3302074C0180057855A /* LaunchScreen.storyboard */,
@@ -69,6 +75,26 @@
 				678CE3342074C0180057855A /* main.m */,
 			);
 			path = "baby&Nurse";
+			sourceTree = "<group>";
+		};
+		678CE3412074C1B30057855A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				678CE33B2074C1990057855A /* Nurse.h */,
+				678CE33C2074C1990057855A /* Nurse.m */,
+				678CE33E2074C1A90057855A /* Baby.h */,
+				678CE33F2074C1A90057855A /* Baby.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		678CE3422074C1E80057855A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				678CE3282074C00E0057855A /* ViewController.h */,
+				678CE3292074C00E0057855A /* ViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +167,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				678CE3402074C1A90057855A /* Baby.m in Sources */,
 				678CE32A2074C00E0057855A /* ViewController.m in Sources */,
 				678CE3352074C0180057855A /* main.m in Sources */,
 				678CE3272074C00E0057855A /* AppDelegate.m in Sources */,
+				678CE33D2074C1990057855A /* Nurse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

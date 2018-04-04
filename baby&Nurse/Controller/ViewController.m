@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "Nurse.h"
+#import "Baby.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    Baby* baby = [[Baby alloc]init];
+    Nurse*nurse = [[Nurse alloc]init];
+    baby.delegate = nurse;
+    [baby wake];
 }
 
 
